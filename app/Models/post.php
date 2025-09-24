@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+use Illuminate\Database\Eloquent\factories\hasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class post extends Model
+{
+   use HasFactory;
+
+   //kolom/field yang boleh diisi
+   protected $fillable =['id','title','content'];
+   public $timestamp = true;
+}
